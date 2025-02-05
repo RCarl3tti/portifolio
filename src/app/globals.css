@@ -2,20 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@import url('https://fonts.googleapis.com/css2?family=Meow+Script&family=Sen:wght@700&display=swap');
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Sen', sans-serif;
+  html {
+  scroll-behavior: smooth;
+}
+}
+
+
+
+.button-color-1 {
+  background-color: #353843;
+  @apply text-gray-400 hover:text-gray-200 cursor-pointer; 
+}
+
+.azul-principal {
+  color: #6393F2;
+}
+
+.container {
+  background-color: #353843;
+  @apply rounded-xl p-4 my-5;
+}
+
+
+.font-meow {
+  font-family: 'Meow Script', cursive;
+}
+
+.verde-principal {
+  color: #65B584;
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
 }
