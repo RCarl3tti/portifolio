@@ -1,4 +1,4 @@
-import BotaoDarkMode from "./BotaoDarkMode";
+import  {DarkMode}  from "./BotaoDarkMode";
 
 
 export default function BotoesNav() {
@@ -11,7 +11,7 @@ export default function BotoesNav() {
             >
               <Sun />
             </button> */}
-            <BotaoDarkMode />
+            <DarkMode />
           </div>
     )
 }

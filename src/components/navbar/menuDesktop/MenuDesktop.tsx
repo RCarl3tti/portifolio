@@ -6,7 +6,7 @@ export default function MenuDesktop() {
       <div className="flex gap-4">
         <ItemMenuDesktop titulo="Home" href="#inicio" />
         <ItemMenuDesktop titulo="Sobre" href="#sobre" />
-        <ItemMenuDesktop titulo="Projetos" href="/" />
+        <ItemMenuDesktop titulo="Projetos" href="#projetos" />
         <ItemMenuDesktop titulo="Contato" href="/" />
       </div>
     </div>

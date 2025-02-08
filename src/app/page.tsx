@@ -1,5 +1,5 @@
 import Apresentacao from "@/components/apresentacao/Apresentacao";
-import Navbar from "@/components/navbar/NavBar";
+import Navbar from "@/components/navbar/index";
 import Projetos from "@/components/projetos";
 import Rodape from "@/components/rodape";
 import Sobre from "@/components/sobre";

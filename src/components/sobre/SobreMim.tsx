@@ -35,8 +35,8 @@ export default function SobreMim() {
       lg:mr-10
       
       ">
-        <div className="verde-principal font-meow text-xl">Sobre mim</div>
-        <div className="text-xl text-zinc-100 font-semibold">
+        <div className="verde-principal font-meow text-base">Sobre mim</div>
+        <div className="text-lg text-zinc-100 font-semibold">
           Apaixonado por aprender de tudo um pouco e encontrar soluções práticas
           usando diversas tecnologias
         </div>
