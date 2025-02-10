@@ -69,7 +69,7 @@ export default function CardProjeto(props: CardProjetoProps) {
       >
         <div className="flex items-center justify-between  text-zinc-400 ">
           <p className="text-sm text-muted-foreground">{props.data}</p>
-          <div className="flex  text-[#6393F2]  rounded ">
+          <div className="flex  text-white  rounded group-hover:text-[#6393F2]">
             {props.tecnologia.map((tecnologia, index) => (
               <span key={index}>{tecnologias[tecnologia]}</span>
             ))}

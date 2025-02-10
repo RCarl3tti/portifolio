@@ -8,7 +8,7 @@ export default function Sobre() {
       id="sobre"
       className="
         lg:mt-20
-        mb-20
+        mb-10
         "
     >
       <div

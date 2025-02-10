@@ -5,7 +5,7 @@ import Formulario from "./Formulario";
 
 export default function Contato() {
   return (
-    <Area id="contato">
+    <Area id="contato" className="pb-10">
       <div className="container">
         <div className="gap-5 flex flex-col items-center md:items-start justify-between md:flex-row p-5 ">
           <div className="flex flex-col items-center md:items-start gap-5 md:w-[50%] ">
@@ -17,7 +17,7 @@ export default function Contato() {
             />
             
             <h1 className="font-meow text-sm text-[#6393F2]">Contato</h1>
-            <p>Gostou do meu trabalho? Vamos trabalhar juntos</p>
+            <p className="text-zinc-300">Gostou do meu trabalho? Vamos trabalhar juntos</p>
             <p className="text-xs text-center md:text-left text-zinc-300">
               Estou sempre pronto para bater um papo. Envie-me um e-mail para
               carletti95@gmail.com ou entre em contato via redes sociais.
