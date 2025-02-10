@@ -7,7 +7,7 @@ export default function MenuDesktop() {
         <ItemMenuDesktop titulo="Home" href="#inicio" />
         <ItemMenuDesktop titulo="Sobre" href="#sobre" />
         <ItemMenuDesktop titulo="Projetos" href="#projetos" />
-        <ItemMenuDesktop titulo="Contato" href="/" />
+        <ItemMenuDesktop titulo="Contato" href="#contato" />
       </div>
     </div>
   );

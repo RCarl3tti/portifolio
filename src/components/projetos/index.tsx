@@ -37,6 +37,7 @@ export default function Projetos() {
             data="Dez 2024"
             imagem={ordemLivros}
             deploy="https://ordem-dos-livros.vercel.app/"
+            github="https://github.com/RCarl3tti/ordem-livros"
           />
           <CardProjeto
             titulo="Portifólio"
@@ -48,12 +49,11 @@ export default function Projetos() {
           />
         </div>
         <Link
-        target="_blank"
-        href="https://github.com/RCarl3tti"
-        className="bg-[#6393F2] shadow-md m-5 p-2 text-xs font-semibold rounded-lg text-zinc-100">
-          <button >
-            Ver mais
-          </button>
+          target="_blank"
+          href="https://github.com/RCarl3tti"
+          className="bg-[#6393F2] shadow-md m-5 p-2 text-xs font-semibold rounded-lg text-zinc-100"
+        >
+          <button>Ver mais</button>
         </Link>
       </div>
     </Area>

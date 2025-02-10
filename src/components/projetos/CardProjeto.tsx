@@ -1,5 +1,6 @@
 import Image from "next/image";
 import {
+  IconBrandGithub,
   IconBrandJavascript,
   IconBrandNextjs,
   IconBrandReact,
@@ -16,6 +17,7 @@ interface CardProjetoProps {
   data: string;
   imagem: any;
   deploy: string;
+  github?: string;
 }
 
 const tecnologias = {
@@ -39,6 +41,8 @@ export default function CardProjeto(props: CardProjetoProps) {
     bg-[#353843]
     text-zinc-100
     group
+    relative
+    
     "
     >
       <div className="aspect-[3/2] overflow-hidden flex flex-1">
@@ -52,7 +56,9 @@ export default function CardProjeto(props: CardProjetoProps) {
           object-cover 
           transition-transform duration-300 
           group-hover:scale-105
-          p-1"
+          p-1
+          
+          "
         />
       </div>
 
@@ -83,6 +89,16 @@ export default function CardProjeto(props: CardProjetoProps) {
           </p>
         </Link>
       </div>
+
+      <Link
+        target="_blank"
+        href={props.github || "#"}
+        className="absolute hidden group-hover:block top-2 right-2 bg-[#6393F2] shadow-md p-2 text-xs font-semibold rounded-lg text-zinc-100"
+      >
+        <div>
+          <IconBrandGithub size={24} />
+        </div>
+      </Link>
     </div>
   );
 }
