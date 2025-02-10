@@ -3,7 +3,19 @@ import { IconArrowRight } from "@tabler/icons-react";
 import { useState } from "react";
 import emailjs from '@emailjs/browser';
 
+
+
+
+
+
+const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID;
+const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID;
+const publicKey = process.env.NEXT_PUBLIC_PUBLIC_KEY;
+
+
+
 export default function Formulario() {
+
 
     const [nome, setNome] = useState('');
     const [email, setEmail ] = useState('');
@@ -24,16 +36,20 @@ export default function Formulario() {
             message: mensagem
         }
 
-        emailjs.send('service_8cgbwn6', 'template_rn3yrp9', templateParams, 'EymSUo6gyLi4V6vVX')
-        .then((response) => {
-            console.log('SUCCESS!', response.status, response.text);
-            alert('Email enviado com sucesso');
-            setNome('');
-            setEmail('');
-            setMensagem('');
-        }, (err) => {
-            console.log('FAILED...', err);
-        })
+        if (serviceId && templateId && publicKey) {
+            emailjs.send(serviceId, templateId, templateParams, publicKey)
+            .then((response) => {
+                console.log('SUCCESS!', response.status, response.text);
+                alert('Email enviado com sucesso');
+                setNome('');
+                setEmail('');
+                setMensagem('');
+            }, (err) => {
+                console.log('FAILED...', err);
+            });
+        } else {
+            console.log('Service ID, Template ID, or Public Key is missing.');
+        }
         
     }
 
