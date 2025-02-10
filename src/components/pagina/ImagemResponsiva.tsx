@@ -1,8 +1,8 @@
-import Image from "next/image"
+import Image, { StaticImageData } from "next/image"
 
 interface ImagemResponsivaProps {
-    imagem: any
-    className?: string
+  imagem: StaticImageData; // ou o tipo correto para a imagem
+  className?: string;
 }
 
 export default function ImagemResponsiva(props: ImagemResponsivaProps) {

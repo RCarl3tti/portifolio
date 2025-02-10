@@ -1,4 +1,4 @@
-import { IconBrandFacebook, IconBrandGithub, IconBrandInstagram, IconBrandLinkedin, IconBrandYoutube } from "@tabler/icons-react"
+import { IconBrandGithub, IconBrandInstagram, IconBrandLinkedin } from "@tabler/icons-react"
 import RedeSocial from "./RedeSocial"
 
 export default function RedesSociais() {

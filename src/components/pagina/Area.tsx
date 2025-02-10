@@ -1,7 +1,7 @@
 interface AreaProps {
-    children: any
-    className?: string
-    id?: string
+  children: React.ReactNode;
+  className?: string;
+  id?: string;
 }
 
 export default function Area(props: AreaProps) {

@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import {
   IconBrandGithub,
   IconBrandJavascript,
@@ -15,7 +15,7 @@ interface CardProjetoProps {
   descricao: string;
   tecnologia: (keyof typeof tecnologias)[];
   data: string;
-  imagem: any;
+  imagem: StaticImageData; // ou o tipo correto para a imagem
   deploy: string;
   github?: string;
 }

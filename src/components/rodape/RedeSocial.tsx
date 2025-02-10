@@ -2,8 +2,8 @@ import React from "react"
 import Link from "next/link"
 
 interface RedeSocialProps {
-    icone: any
-    url: string
+    icone: React.ReactElement;
+    url: string;
 }
 
 export default function RedeSocial(props: RedeSocialProps) {
@@ -11,9 +11,7 @@ export default function RedeSocial(props: RedeSocialProps) {
         <Link href={props.url} target="_blank">
             <div className="bg-zinc-800 rounded-lg p-1 mr-3 cursor-pointer">
                 {React.cloneElement(props.icone, {
-                    size: 35,
-                    strokeWidth: 1,
-                    className: "text-blue-400",
+                    
                 })}
             </div>
         </Link>

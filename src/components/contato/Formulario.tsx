@@ -21,7 +21,7 @@ export default function Formulario() {
     const [email, setEmail ] = useState('');
     const [mensagem, setMensagem] = useState('');
 
-    function mandarEmail(e: any){
+    function mandarEmail(e: React.FormEvent<HTMLFormElement>){
         e.preventDefault();
 
         if(!nome || !email || !mensagem){

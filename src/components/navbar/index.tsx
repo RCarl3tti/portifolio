@@ -5,7 +5,6 @@ import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import Logo from "../pagina/Logo";
 import MenuDesktop from "./menuDesktop/MenuDesktop";
-import BotoesNav from "./menuDesktop/BotoesNav";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,7 +21,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <Logo width={40} height={40}/>
           <MenuDesktop />
-          <BotoesNav />
+          
 
           {/* Mobile menu button */}
           <div className="md:hidden">
