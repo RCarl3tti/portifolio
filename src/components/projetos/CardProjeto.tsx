@@ -1,11 +1,18 @@
 import Image from "next/image";
-import { IconBrandJavascript, IconBrandSvelte, IconBrandTypescript } from "@tabler/icons-react";
+import {
+  IconBrandJavascript,
+  IconBrandNextjs,
+  IconBrandReact,
+  IconBrandSvelte,
+  IconBrandTailwind,
+  IconBrandTypescript,
+} from "@tabler/icons-react";
 import Link from "next/link";
 
 interface CardProjetoProps {
   titulo: string;
   descricao: string;
-  tecnologia: keyof typeof tecnologias;
+  tecnologia: (keyof typeof tecnologias)[];
   data: string;
   imagem: any;
   deploy: string;
@@ -15,12 +22,12 @@ const tecnologias = {
   javascript: <IconBrandJavascript />,
   typescript: <IconBrandTypescript />,
   svelte: <IconBrandSvelte />,
-}
-
-
+  react: <IconBrandReact />,
+  next: <IconBrandNextjs />,
+  tailwindcss: <IconBrandTailwind />,
+};
 
 export default function CardProjeto(props: CardProjetoProps) {
-
   return (
     <div
       className="
@@ -46,7 +53,6 @@ export default function CardProjeto(props: CardProjetoProps) {
           transition-transform duration-300 
           group-hover:scale-105
           p-1"
-          
         />
       </div>
 
@@ -57,19 +63,25 @@ export default function CardProjeto(props: CardProjetoProps) {
       >
         <div className="flex items-center justify-between  text-zinc-400 ">
           <p className="text-sm text-muted-foreground">{props.data}</p>
-          <div className="flex h-6 w-6 items-center justify-center rounded ">
-            <span className="text-xs font-medium text-[#6393F2]">
-              {tecnologias[props.tecnologia]}
-            </span>
+          <div className="flex  text-[#6393F2]  rounded ">
+            {props.tecnologia.map((tecnologia, index) => (
+              <span key={index}>{tecnologias[tecnologia]}</span>
+            ))}
           </div>
         </div>
 
-        <Link href={props.deploy} className="block space-y-1 py-3 ">
-            <h3 className="font-semibold leading-none tracking-tight hover:text-white">{props.titulo}</h3>
-            <p className="text-sm text-muted-foreground text-zinc-300 group-hover:text-white">{props.descricao}</p>
+        <Link
+          target="_blank"
+          href={props.deploy}
+          className="block space-y-1 py-3 "
+        >
+          <h3 className="font-semibold leading-none tracking-tight hover:text-white">
+            {props.titulo}
+          </h3>
+          <p className="text-sm text-muted-foreground text-zinc-300 group-hover:text-white">
+            {props.descricao}
+          </p>
         </Link>
-
-
       </div>
     </div>
   );
