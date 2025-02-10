@@ -46,39 +46,29 @@ const Navbar = () => {
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <Link
-              href="/"
-              className="text-gray-600 hover:text-gray-800 block px-3 py-2 rounded-md text-base font-medium"
+              href="#home"
+              className="text-gray-600 hover:text-gray-200 block px-3 py-2 rounded-md text-base font-medium"
             >
               Home
             </Link>
             <Link
-              href="/about"
-              className="text-gray-600 hover:text-gray-800 block px-3 py-2 rounded-md text-base font-medium"
+              href="#sobre"
+              className="text-gray-600 hover:text-gray-200 block px-3 py-2 rounded-md text-base font-medium"
             >
-              About
+              Sobre
             </Link>
             <Link
-              href="/services"
-              className="text-gray-600 hover:text-gray-800 block px-3 py-2 rounded-md text-base font-medium"
+              href="#projetos"
+              className="text-gray-600 hover:text-gray-200 block px-3 py-2 rounded-md text-base font-medium"
             >
-              Services
+              Projetos
             </Link>
             <Link
-              href="/contact"
-              className="text-gray-600 hover:text-gray-800 block px-3 py-2 rounded-md text-base font-medium"
+              href="#contato"
+              className="text-gray-600 hover:text-gray-200 block px-3 py-2 rounded-md text-base font-medium"
             >
-              Contact
+              Contato
             </Link>
-          </div>
-          <div className="pt-4 pb-3 border-t border-gray-200">
-            <div className="flex items-center px-5">
-              <button className="bg-blue-500 text-white px-4 py-2 rounded-md text-sm font-medium mr-2 w-full">
-                Sign Up
-              </button>
-              <button className="bg-gray-200 text-gray-800 px-4 py-2 rounded-md text-sm font-medium w-full">
-                Login
-              </button>
-            </div>
           </div>
         </div>
       )}

@@ -1,4 +1,5 @@
-import { ArrowRight, FileUser } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import BotaoDownload from "./BotaoDownload";
 
 
 
@@ -49,18 +50,7 @@ export default function Ola() {
       </div>
 
       <div className="flex justify-center sm:justify-start items-center gap-2">
-        <div
-          className={`
-                    flex items-center gap-2 cursor-pointer
-                    text-zinc-300 px-5 py-2.5
-                    button-color-1 rounded-md
-                `}
-        >
-          <FileUser />
-          <span className="font-normal md:text-sm text-base">
-            <span className="hidden sm:inline">Download </span> CV
-          </span>
-        </div>
+        <BotaoDownload/>
 
         <div
           className={`

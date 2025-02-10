@@ -1,6 +1,6 @@
 import Area from "../pagina/Area";
 import TextoSobreMim from "./SobreMim";
-import Animacao from "../apresentacao/Animacao";
+import Animacao from "./Animacao";
 
 export default function Sobre() {
   return (
