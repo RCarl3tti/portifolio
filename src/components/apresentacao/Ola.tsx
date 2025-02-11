@@ -1,5 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import BotaoDownload from "./BotaoDownload";
+import Link from "next/link";
 
 
 
@@ -19,7 +20,7 @@ export default function Ola() {
           <h1>Olá, eu sou o</h1>
         </div>
         <div className="flex gap-2 azul-principal">
-          <span className="font-normal ">Renan</span>
+          <span className="font-normal">Renan</span>
           <span className="font-bold">Carletti</span>
         </div>
       </div>
@@ -39,7 +40,7 @@ export default function Ola() {
 
 
       <div className="text-md  font-normal text-zinc-500 text-center sm:text-left ">
-        Mais de 2 anos de experiência na área de tecnologia e na construção de
+        Mais de 2 anos de conhecimento na área de tecnologia e na construção de
       </div>
       <div className="text-md  font-normal text-zinc-500 text-center sm:text-left ">
         aplicativos web e móveis inovadores usando tecnologias como React,
@@ -52,7 +53,7 @@ export default function Ola() {
       <div className="flex justify-center sm:justify-start items-center gap-2">
         <BotaoDownload/>
 
-        <div
+        <Link href="#contato"
           className={`
                         flex items-center gap-2 cursor-pointer
                         bg-gradient-to-r from-indigo-600 to-cyan-600
@@ -63,7 +64,7 @@ export default function Ola() {
              <span className="hidden sm:inline">Entrar em</span> Contato <ArrowRight className="hidden lg:inline" />
           
           </span>
-        </div>
+        </Link>
       </div>
     </div>
   );

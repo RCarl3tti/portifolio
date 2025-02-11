@@ -16,6 +16,7 @@ export default function Logo(props: LogoProps) {
               <Image src={props.completa ? "/logoNome.svg" : "/logo.svg"} alt="Logo" 
               width={props.width} 
               height={props.height} />
+              
             </Link>
           </div>
     )

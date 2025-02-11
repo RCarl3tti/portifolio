@@ -51,7 +51,7 @@ export default function Projetos() {
         <Link
           target="_blank"
           href="https://github.com/RCarl3tti"
-          className="bg-[#6393F2] shadow-md m-5 p-2 text-xs font-semibold rounded-lg text-zinc-100"
+          className="bg-gradient-to-r from-indigo-600 to-cyan-600 shadow-md m-5 p-2 text-xs font-semibold rounded-lg text-zinc-100"
         >
           <button>Ver mais</button>
         </Link>

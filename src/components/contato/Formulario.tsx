@@ -83,7 +83,7 @@ export default function Formulario() {
           value={mensagem}
         ></textarea>
 
-        <button className="bg-[#6393F2] text-white p-2 rounded-md flex items-center justify-center gap-2">
+        <button className="bg-gradient-to-r from-indigo-600 to-cyan-600 text-white p-2 rounded-md flex items-center justify-center gap-2">
           Enviar
           <IconArrowRight size={20} />
         </button>
