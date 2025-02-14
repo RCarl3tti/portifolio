@@ -1,6 +1,8 @@
+'use client'
 import { ArrowRight } from "lucide-react";
 import BotaoDownload from "./BotaoDownload";
 import Link from "next/link";
+import MeuNome from "./MeuNome";
 
 
 
@@ -19,10 +21,11 @@ export default function Ola() {
         <div>
           <h1>Olá, eu sou o</h1>
         </div>
-        <div className="flex gap-2 azul-principal">
-          <span className="font-normal">Renan</span>
-          <span className="font-bold">Carletti</span>
-        </div>
+        <Link className="py-5" href={"https://www.linkedin.com/in/renan-carletti/"} target="_blank">
+          <MeuNome />
+
+        </Link>
+        
       </div>
     );
   }

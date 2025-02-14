@@ -1,6 +1,5 @@
 import Image, { StaticImageData } from "next/image";
 import {
-  IconBrandGithub,
   IconBrandJavascript,
   IconBrandNextjs,
   IconBrandReact,
@@ -9,6 +8,7 @@ import {
   IconBrandTypescript,
 } from "@tabler/icons-react";
 import Link from "next/link";
+import BotaoGithub from "./BotaoGithub";
 
 interface CardProjetoProps {
   titulo: string;
@@ -93,11 +93,9 @@ export default function CardProjeto(props: CardProjetoProps) {
       <Link
         target="_blank"
         href={props.github || "#"}
-        className="absolute hidden group-hover:block top-2 right-2 bg-gradient-to-r from-indigo-600 to-cyan-600 shadow-md p-2 text-xs font-semibold rounded-lg text-zinc-100"
+        className="absolute hidden group-hover:block top-2 right-2 "
       >
-        <div>
-          <IconBrandGithub size={24} />
-        </div>
+        <BotaoGithub />
       </Link>
     </div>
   );
