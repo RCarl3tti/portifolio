@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 interface InputProps {
     placeholder: string;
-    onChange: (e: any) => void;
+    onChange: (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void;
     value: string;
     textArea?: boolean;
 }
@@ -31,6 +31,7 @@ const StyledWrapper = styled.div`
     background-color: #f3f3f3;
     border-radius: 10px;
     transition: all 0.5s;
+    color: #333;
   }
 
   .textArea {
